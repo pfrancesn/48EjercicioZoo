@@ -1,68 +1,30 @@
 
-
-public class Domestico {
-	private int Id_animal;
-	private int Height;
-	private int Weight;
-	private int Age;
-	private String Name;
+public class Domestico extends Animal {
 	private String Specie;
 	private boolean Lovely;
 	private String Sound;
 	private String Owner;
 
-	public Domestico(int id_animal, int height, int weight, int age, String name, String specie, boolean lovely,
-			String sound, String owner) {
+	public Domestico() {
 		super();
-		Id_animal = id_animal;
-		Height = height;
-		Weight = weight;
-		Age = age;
-		Name = name;
+		// TODO Auto-generated constructor stub
+	}
+
+	public Domestico(String specie, boolean lovely, String sound, String owner) {
+		super();
 		Specie = specie;
 		Lovely = lovely;
 		Sound = sound;
 		Owner = owner;
 	}
 
-	public int getId_animal() {
-		return Id_animal;
-	}
-
-	public void setId_animal(int id_animal) {
-		Id_animal = id_animal;
-	}
-
-	public int getHeight() {
-		return Height;
-	}
-
-	public void setHeight(int height) {
-		Height = height;
-	}
-
-	public int getWeight() {
-		return Weight;
-	}
-
-	public void setWeight(int weight) {
-		Weight = weight;
-	}
-
-	public int getAge() {
-		return Age;
-	}
-
-	public void setAge(int age) {
-		Age = age;
-	}
-
-	public String getName() {
-		return Name;
-	}
-
-	public void setName(String name) {
-		Name = name;
+	public Domestico(int id_animal, int height, int weight, int age, String name, String specie, boolean lovely,
+			String sound, String owner) {
+		super(id_animal, height, weight, age, name);
+		Specie = specie;
+		Lovely = lovely;
+		Sound = sound;
+		Owner = owner;
 	}
 
 	public String getSpecie() {
@@ -99,8 +61,7 @@ public class Domestico {
 
 	@Override
 	public String toString() {
-		return "Domestico [Id_animal=" + Id_animal + ", Height=" + Height + ", Weight=" + Weight + ", Age=" + Age
-				+ ", Name=" + Name + ", Specie=" + Specie + ", Lovely=" + Lovely + ", Sound=" + Sound + ", Owner="
-				+ Owner + "]";
+		return "Domestico [Specie=" + Specie + ", Lovely=" + Lovely + ", Sound=" + Sound + ", Owner=" + Owner + "]";
 	}
+
 }

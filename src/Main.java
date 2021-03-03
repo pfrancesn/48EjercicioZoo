@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -302,7 +303,7 @@ public class Main {
 	}
 
 	public static void Case4(ArrayList<Domestico> Domesticos) {
-		/*Collections.sort(Domesticos, new Comparator<Domestico>() {
+		Collections.sort(Domesticos, new Comparator<Domestico>() {
 			public int compare(Domestico D1, Domestico D2) {
 				return new Integer(D2.getAge()).compareTo(new Integer(D1.getAge()));
 			}
@@ -310,7 +311,7 @@ public class Main {
 		for (int i = 0; Domesticos.size() > i; i++) {
 			System.out.println(Domesticos.get(i).toString());
 		}
-		System.out.print('\n');*/
+		System.out.print('\n');
 	}
 
 	public static void Case5(ArrayList<Salvaje> Salvajes, ArrayList<Domestico> Domesticos) {
